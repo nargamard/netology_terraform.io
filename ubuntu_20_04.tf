@@ -20,8 +20,4 @@ resource "yandex_compute_instance" "node-01" {
     nat       = true
     ip_address = "192.168.101.101"
   }
-
-  metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
-  }
 }
