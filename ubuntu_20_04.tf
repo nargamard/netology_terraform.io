@@ -1,5 +1,5 @@
-resource "yandex_compute_instance" "node-01" {
-  name = "node-01"
+resource "yandex_compute_instance" "node" {
+  name = "node"
   hostname                  = "node-01.netology.yc"
   resources {
     cores  = 2
